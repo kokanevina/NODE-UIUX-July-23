@@ -4,12 +4,12 @@ class Employee{
     empId; 
     empName;
     basicSalary;
-    constructor(){
+    /* constructor(){
         console.log("default constructor called......");
         this.empId=0;
         this.empName="AAA";
         this.basicSalary=1000;
-    }
+    } */
     /* in one class multiple constructors not allowed*/
    /*  constructor(id,name,salary){
         this.empId=id;
@@ -23,7 +23,7 @@ class Employee{
         return `Employee Details [id=${this.empId} name=${this.empName} basic salary=${this.basicSalary}]`;
     }
 }
-let emp1=new Employee(); // default constructor
+let emp1=new Employee(); // default constructor // intial  values can not be set 
 console.log(emp1.empId); // inital value =0
 emp1.empId=1;  // state change
 emp1.empName="Hari";
