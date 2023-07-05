@@ -5,9 +5,9 @@ class Employee{
     empName;
     basicSalary;
     /* in one class multiple constructors not allowed*/
-    constructor(id=0,name="BB",salary=1000){
+    constructor(empId=0,name="BB",salary=1000){
         console.log("in parameterized constructor........");
-        this.empId=id;
+        this.empId=empId; // easy differentiate
         this.empName=name;
         this.basicSalary=salary;
     }
@@ -34,3 +34,4 @@ console.log(emp3.getDetails());
 
 let emp4=new Employee(7,"Karuna");
 console.log(emp4.getDetails());
+
