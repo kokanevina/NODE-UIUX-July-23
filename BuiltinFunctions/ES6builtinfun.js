@@ -26,3 +26,10 @@ let sum1=salaryArray.reduce((sum,e)=>sum+e, 1000);
 // initial value in sum = external value = 1000
 // initial value in e = 1st element of an array = 56000
 console.log(sum1);
+console.log("______________");
+// increment every salary by 5000 and get new salaries in new array 
+salaryArray.map(e=>e+5000).forEach(e=>console.log(e));
+console.log("______________");
+// get sum of salaries which are less than or equal to 45000
+let ss=salaryArray.filter(ele=>ele<=45000).reduce((acc,e)=>acc+e);
+console.log(ss);

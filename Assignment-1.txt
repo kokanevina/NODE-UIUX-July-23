@@ -1,0 +1,8 @@
+create array of Employee objects (use previous class Employee).
+
+Q. Iterate array using forEach
+Q. Find Employees whose salary >50000
+Q. Find first employee whose name starts with N
+Q. Find all employees with name starting with A
+Q. Make sum of salaries of all employees
+Q. Create new Array having id of employee starting with prefix "NEO-"
