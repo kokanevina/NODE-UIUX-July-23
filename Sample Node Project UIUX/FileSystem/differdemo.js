@@ -15,3 +15,5 @@ file_s.readFile('Files/SachinInfo.txt','utf-8', function(er, data){
 console.log("Hello.... after reading file....");
 // readFileSync : BLOCKING IO
 //readFile : NONBLOCKING IO
+
+// async and await : when we will learn promises
