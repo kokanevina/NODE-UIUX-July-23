@@ -12,3 +12,6 @@ file_s.appendFile("Files/SachinInfo.txt",'Welcome to Neosoft', function(err){
     if(err==null)
         console.log("Contents appended Successfully");
 })
+
+// writeFileSync
+// appendFileSync
