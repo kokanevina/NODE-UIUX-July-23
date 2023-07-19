@@ -25,3 +25,6 @@ let dir2="Files";
 let fileName="SachinInfo.txt";
 let joinedPath=mypath.join(dir1,dir2,fileName);
 console.log(joinedPath);
+
+let parsedObject=mypath.parse(filePath2);
+console.log(parsedObject);
