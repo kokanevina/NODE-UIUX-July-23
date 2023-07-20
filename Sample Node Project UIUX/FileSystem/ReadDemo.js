@@ -1,6 +1,7 @@
 
 
 const file_s=require('fs');
+console.log(file_s);
 
 let contents=file_s.readFileSync('Files/SachinInfo.txt');
 console.log(contents); // buffer object
