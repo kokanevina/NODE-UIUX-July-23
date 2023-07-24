@@ -2,6 +2,7 @@
 let express=require('express');
 
 let server=express();
+server.listen(8080, ()=>console.log("server listening on port 8080"));
 
 server.get('/',(request, response)=>{
     response.send("Hello I got your get request... Thank you");
@@ -16,4 +17,3 @@ server.get('/show*',(request, response)=>{
 server.post("/", (request,reponse)=>{
     response.send("POST");
 })
-server.listen(8080, ()=>console.log("server listening on port 8080"));
