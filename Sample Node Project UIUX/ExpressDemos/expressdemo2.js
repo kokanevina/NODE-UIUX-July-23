@@ -1,5 +1,5 @@
 let express=require('express');
-
+let bodyParser=require('body-parser');
 let server=express();
 server.listen(8080, ()=>console.log("server listening on port 8080"));
 
@@ -18,6 +18,14 @@ server.get('/processdata_getrequest', (request,response)=>{
         user_name:request.query.username,
         password:request.query.password
     }
-    response.send(JSON.stringify(user));
+   response.send(JSON.stringify(user));
 })
-// do same to serve images e.g. /roseflower
+let dataParser=bodyParser.urlencoded({extended:false});
+server.post('/processdata_postrequest',dataParser, (request,response)=>{
+    // get request : data is in link in key value pair  username=what u type, password=wat u type
+
+    console.log(request.body.username);
+    console.log(request.body.password);
+    response.send("Welcome "+request.body.username);
+    
+})
